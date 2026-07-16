@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+/*import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -33,4 +33,17 @@ export async function POST(req: Request) {
       { status: 500 },
     );
   }
+}
+ */ import { NextResponse } from "next/server";
+
+export async function GET() {
+  return NextResponse.json({
+    message: "API CONTACT OK",
+  });
+}
+
+export async function POST() {
+  return NextResponse.json({
+    success: true,
+  });
 }
