@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Providers from "@/components/ThemeProvider";
 
 export const metadata = {
   title: "Rodrigue Nyassa | Full Stack Java Developer",
@@ -30,11 +31,13 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="fr"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Providers> 
+          {children}
+          </Providers> 
+          </body>
       
     </html>
   );

@@ -3,6 +3,9 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
+import { FaArrowRight } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -11,7 +14,7 @@ export default function Hero() {
       className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white pt-24"
     >
       <div className="absolute top-1/2 right-20 h-96 w-96 -translate-y-1/2 rounded-full bg-blue-600/20 blur-3xl"></div>
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full"></div>
+
       <div className="max-w-7xl mx-auto px-6 w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Partie gauche */}
@@ -28,8 +31,27 @@ export default function Hero() {
               Rodrigue Nyassa
             </h1>
 
-            <h2 className="text-2xl text-gray-300 mb-6">
-              Développeur Full Stack Java & Next.js
+            <h2 className="text-2xl md:text-3xl font-semibold text-blue-400 mb-6">
+              <TypeAnimation
+                sequence={[
+                  
+                  "Développeur Java",
+                  2000,
+                  "Infographiste",
+                  2000,
+                  "Développeur Spring Boot",
+                  2000,
+                  "Développeur Next.js",
+                  2000,
+                  "Développeur Full Stack",
+                  2000,
+                  "Monteur vidéo VFX",
+                  2000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
             </h2>
 
             <p className="text-lg text-slate-300 leading-8 mb-8 max-w-xl">
@@ -41,16 +63,18 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4 mb-8">
               <a
                 href="#projects"
-                className="rounded-xl bg-blue-600 px-8 py-4 font-semibold shadow-lg shadow-blue-600/30 transition-all duration-300 hover:-translate-y-1 hover:bg-blue-700"
+                className="flex items-center gap-2 rounded-xl bg-blue-600 px-8 py-4 font-semibold shadow-lg shadow-blue-600/30 transition-all duration-300 hover:-translate-y-1 hover:bg-blue-700"
               >
                 Voir mes projets
+                <FaArrowRight />
               </a>
 
               <a
                 href="/cv.pdf"
-                className="rounded-xl border border-blue-500 px-8 py-4 font-semibold transition-all duration-300 hover:bg-blue-500"
+                className="flex items-center gap-2 rounded-xl border border-blue-500 px-8 py-4 font-semibold transition-all duration-300 hover:bg-blue-500"
               >
                 Télécharger mon CV
+                <FaDownload />
               </a>
             </div>
 
@@ -75,7 +99,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="nyassarodrigue3@email.com"
+                href="mailto:nyassarodrigue3@email.com"
                 className="hover:text-blue-500 transition"
               >
                 <FaEnvelope size={28} />
