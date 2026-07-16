@@ -8,7 +8,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-6">
         <SectionTitle
           title="Mes projets"
-          subtitle="Quelques réalisations qui montrent mes compétences"
+          subtitle="Quelques réalisations qui montrent mes compétences (Section en developement)"
         />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

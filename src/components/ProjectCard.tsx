@@ -21,9 +21,9 @@ export default function ProjectCard({ project }: Props) {
       <Image
         src={project.image}
         alt={project.title}
-        width={500}
-        height={300}
-        className="w-full h-56 object-cover"
+        fill
+        sizes="(max-width:768px) 100vw, 33vw"
+        className="object-cover"
       />
 
       <div className="p-6">

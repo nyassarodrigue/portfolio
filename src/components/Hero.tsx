@@ -117,9 +117,10 @@ export default function Hero() {
             <Image
               src="/images/profil1.jpg"
               alt="Photo de profil"
-              width={400}
-              height={400}
+              width={420}
+              height={420}
               priority
+              quality={90}
               className="rounded-full border-4 border-blue-500 object-cover shadow-[0_0_60px_rgba(59,130,246,0.45)] transition-transform duration-500 hover:scale-105"
             />
           </motion.div>
