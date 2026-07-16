@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import {Project} from "@/type/Project";
+import type { Project } from "@/type/Project";
 
 interface Props {
   project: Project;
