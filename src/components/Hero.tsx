@@ -27,7 +27,7 @@ export default function Hero() {
             }}
           >
             <p className="text-blue-500 text-lg font-semibold mb-2">
-              Hello les gens 😎😎
+              Bonjour, je suis
             </p>
 
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
