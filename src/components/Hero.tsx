@@ -20,11 +20,11 @@ export default function Hero() {
           {/* Partie gauche */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-animate={{ opacity: 1, y: 0 }}
-transition={{
-  duration: 0.5,
-  ease: "easeOut",
-}}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.5,
+              ease: "easeOut",
+            }}
           >
             <p className="text-blue-500 text-lg font-semibold mb-2">
               Hello les gens 😎😎
@@ -37,7 +37,6 @@ transition={{
             <h2 className="text-2xl md:text-3xl font-semibold text-blue-400 mb-6">
               <TypeAnimation
                 sequence={[
-                  
                   "Développeur Java",
                   2000,
                   "Infographiste",
@@ -109,7 +108,7 @@ transition={{
               </a>
             </div>
           </motion.div>
-          
+
           {/* Partie droite */}
           <motion.div
             className="flex justify-center"
@@ -122,7 +121,7 @@ transition={{
               alt="Photo de profil"
               width={420}
               height={420}
-              priority={90}
+              priority
               className="rounded-full border-4 border-blue-500 object-cover shadow-[0_0_60px_rgba(59,130,246,0.45)] transition-transform duration-500 hover:scale-105"
             />
           </motion.div>
