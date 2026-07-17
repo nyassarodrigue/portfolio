@@ -36,7 +36,7 @@ export default function Hero() {
             </div>
 
             <p className="text-cyan-400 text-lg font-semibold mb-3">
-              Bonjour, je suis
+              Hey la team 👋
             </p>
 
             <h1 className="text-5xl md:text-4xl font-black leading-tight mb-6">
