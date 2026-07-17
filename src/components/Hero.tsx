@@ -30,8 +30,8 @@ export default function Hero() {
               Bonjour, je suis
             </p>
 
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Rodrigue Nyassa
+            <h1 className="text-5xl md:text-5xl font-bold mb-6">
+              Rodrigue Nyassa (Léon)
             </h1>
 
             <h2 className="text-2xl md:text-3xl font-semibold text-blue-400 mb-6">
