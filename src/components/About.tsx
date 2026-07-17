@@ -32,9 +32,10 @@ export default function About() {
 
           <p className="text-center text-slate-300 max-w-3xl mx-auto leading-8">
             Je suis développeur Full Stack spécialisé en Java, Spring Boot et
-            Next.js. J'aime concevoir des applications modernes, sécurisées et
-            performantes, avec une attention particulière portée à la qualité du
-            code, à l'architecture et à l'expérience utilisateur.
+            Next.js. J&apos;aime développer des applications modernes,
+            sécurisées et performantes, avec une attention particulière portée à
+            la qualité du code, à l&apos;architecture et à l&apos;expérience
+            utilisateur.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-14">

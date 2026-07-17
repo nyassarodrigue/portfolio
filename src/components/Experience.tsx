@@ -11,7 +11,7 @@ export default function Experience() {
             <p className="text-blue-400">2024 - Aujourd'hui</p>
 
             <p className="text-slate-300 mt-3">
-              Développement d'applications avec Java Spring Boot, Next.js, React.js
+              Développement d&apos;applications avec Java Spring Boot, Next.js, React.js
               MongoDB et MySQL.
             </p>
           </div>

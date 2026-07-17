@@ -51,7 +51,7 @@ export default function Contact() {
         subject: "",
         message: "",
       });
-    } catch (err) {
+    } catch  {
       setError("❌ Impossible d'envoyer le message.");
     } finally {
       setLoading(false);
