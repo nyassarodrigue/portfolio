@@ -12,13 +12,29 @@ const links = [
   { name: "Contact", href: "#contact" },
 ];
 
+const scrollToSection = (id: string) => {
+  const element = document.getElementById(id);
+
+  if (!element) return;
+
+  const navbarHeight = 80;
+
+  const y =
+    element.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+
+  window.scrollTo({
+    top: y,
+    behavior: "smooth",
+  });
+};
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 w-full bg-slate-900/90 backdrop-blur-md shadow-md z-40">
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <Link href="/" className="text-2xl font-bold text-blue-500">
+        <Link href="/#hero" className="text-2xl font-bold text-blue-500">
           Rodrigue NYASSA
         </Link>
 

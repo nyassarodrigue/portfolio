@@ -19,9 +19,12 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Partie gauche */}
           <motion.div
-            initial={{ opacity: 0, x: -60 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 20 }}
+animate={{ opacity: 1, y: 0 }}
+transition={{
+  duration: 0.5,
+  ease: "easeOut",
+}}
           >
             <p className="text-blue-500 text-lg font-semibold mb-2">
               Hello les gens 😎😎
@@ -106,7 +109,7 @@ export default function Hero() {
               </a>
             </div>
           </motion.div>
-
+          
           {/* Partie droite */}
           <motion.div
             className="flex justify-center"
@@ -119,8 +122,7 @@ export default function Hero() {
               alt="Photo de profil"
               width={420}
               height={420}
-              priority
-              quality={90}
+              priority={90}
               className="rounded-full border-4 border-blue-500 object-cover shadow-[0_0_60px_rgba(59,130,246,0.45)] transition-transform duration-500 hover:scale-105"
             />
           </motion.div>
